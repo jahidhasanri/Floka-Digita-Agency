@@ -32,8 +32,13 @@ const Banner = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex items-center justify-between h-full px-20 mt-36">
+      
 
+      
+      
+      
+      
+      <div className="relative z-10 flex items-center justify-between h-full px-20 mt-36">
         {/* Left Text */}
         <div>
           <h1 className="text-[240px] text-white font-normal">Floka</h1>
@@ -41,7 +46,9 @@ const Banner = () => {
         </div>
 
         {/* Card */}
-        <div className="bg-white rounded-2xl p-3 w-105 h-40 flex gap-6 ">
+       <div>
+
+       <div className="bg-white rounded-2xl p-3 w-105 h-40 flex gap-6 mb-5">
           <div
             className="w-35 h-35 overflow-hidden rounded-xl"
             onMouseMove={handleMove}
@@ -71,9 +78,14 @@ const Banner = () => {
           </div>
 
           </div>
-
-          {/* Plus button */}
         </div>
+
+      <p className="text-[20px] text-white font-semibold">No cookie-cutter websites. No fluff. </p>
+      <p className="text-[18px] font-semibold text-gray-300">Just real tools and smart strategies to grow your <br /> business and elevate your brand.</p>
+
+       </div>
+
+
       </div>
     </div>
   );

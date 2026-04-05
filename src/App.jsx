@@ -2,6 +2,7 @@
 
 import './App.css'
 import Banner from './components/Banner'
+import ContactSection from './components/ContactSection'
 import Expertise from './components/expertise'
 import FeedBack from './components/FeedBack'
 import FunFacts from './components/FunFacts'
@@ -25,6 +26,7 @@ function App() {
      <FunFacts></FunFacts>
      <HappyUsers></HappyUsers>
      <FeedBack></FeedBack>
+     <ContactSection></ContactSection>
 
      
     </div>

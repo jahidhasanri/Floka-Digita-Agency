@@ -3,6 +3,7 @@
 import './App.css'
 import Banner from './components/Banner'
 import Expertise from './components/expertise'
+import FeedBack from './components/FeedBack'
 import FunFacts from './components/FunFacts'
 import HappyUsers from './components/HappyUsers'
 import Navabar from './components/Navabar'
@@ -23,6 +24,7 @@ function App() {
      <Expertise></Expertise>
      <FunFacts></FunFacts>
      <HappyUsers></HappyUsers>
+     <FeedBack></FeedBack>
 
      
     </div>

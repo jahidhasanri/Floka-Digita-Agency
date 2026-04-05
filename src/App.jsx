@@ -2,6 +2,7 @@
 
 import './App.css'
 import Banner from './components/Banner'
+import Expertise from './components/expertise'
 import Navabar from './components/Navabar'
 import OurApproch from './components/OurApproch'
 import Protfolio from './components/Protfolio'
@@ -17,6 +18,7 @@ function App() {
      <OurApproch></OurApproch>
      <TextSlider></TextSlider>
      <Protfolio></Protfolio>
+     <Expertise></Expertise>
 
      
     </div>

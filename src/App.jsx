@@ -6,9 +6,11 @@ import ContactSection from './components/ContactSection'
 import Expertise from './components/expertise'
 import FeedBack from './components/FeedBack'
 import FunFacts from './components/FunFacts'
+import Getreward from './components/Getrewards'
 import HappyUsers from './components/HappyUsers'
 import Navabar from './components/Navabar'
 import OurApproch from './components/OurApproch'
+import Ouravengers from './components/Ouravengers'
 import Protfolio from './components/Protfolio'
 import TextSlider from './components/TextSlider'
 
@@ -27,7 +29,8 @@ function App() {
      <HappyUsers></HappyUsers>
      <FeedBack></FeedBack>
      <ContactSection></ContactSection>
-
+     <Getreward></Getreward>
+      <Ouravengers></Ouravengers>
      
     </div>
   )

@@ -105,7 +105,7 @@ const PortfolioCard = ({
 
 const Protfolio = () => {
   return (
-    <div className="max-w-6xl mx-auto py-10">
+    <div className="max-w-331 mx-auto py-10">
       {/* Header */}
       <p className="mb-4 font-semibold">PORTFOLIO</p>
       <hr className="border-gray-300 mb-10" />

@@ -83,7 +83,7 @@ const Expertise = () => {
       </div>
 
       {/* accordion */}
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-331 mx-auto">
         {data.map((item, index) => (
           <div key={index} className="border-b border-gray-800 py-8">
 

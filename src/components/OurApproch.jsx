@@ -21,7 +21,7 @@ const OurApproch = () => {
 
   }, []);
     return (
-        <div className='w-265 mx-auto mt-32.5  '>
+        <div className='max-w-331 mx-auto mt-32.5 border '>
             <div>
                 {/* 1st section */}
                 <div className='flex gap-60 items-center'>

@@ -2,8 +2,10 @@
 
 import './App.css'
 import Banner from './components/Banner'
+import BlogUpdates from './components/BlogUpdates'
 import ContactSection from './components/ContactSection'
 import Expertise from './components/expertise'
+import FAQSection from './components/FAQSection'
 import FeedBack from './components/FeedBack'
 import FunFacts from './components/FunFacts'
 import Getreward from './components/Getrewards'
@@ -31,6 +33,8 @@ function App() {
      <ContactSection></ContactSection>
      <Getreward></Getreward>
       <Ouravengers></Ouravengers>
+      <FAQSection></FAQSection>
+      <BlogUpdates></BlogUpdates>
      
     </div>
   )

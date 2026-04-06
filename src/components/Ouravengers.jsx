@@ -48,26 +48,34 @@ const devTeam = [
 
 const Ouravengers = () => {
   const [team, setTeam] = useState("design");
-  const [scrollY, setScrollY] = useState(0);
+  // const [scrollY, setScrollY] = useState(0);
 
   const currentTeam = team === "design" ? designTeam : devTeam;
 
-  // ✅ scroll tracking
+  /* ---------- SCROLL TRACK ---------- */
+
   useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY);
+    const handleScroll = () => {
+      // setScrollY(window.scrollY);
+    };
+
     window.addEventListener("scroll", handleScroll);
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // ✅ FIXED movement (won’t disappear)
-  const moveX = Math.min(scrollY * 0.15, 120);
+  /* ---------- IMAGE MOVEMENT ---------- */
+
+//   const moveX = Math.min(scrollY * 0.15, 160);
 
   return (
     <section className="bg-gray-100 py-20 px-6 lg:px-20">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12">
-        
+
         {/* LEFT SIDE */}
+
         <div className="flex-1">
+
           <p className="text-xs tracking-widest text-gray-500 mb-4">
             OUR AVENGERS
           </p>
@@ -77,7 +85,9 @@ const Ouravengers = () => {
           </h1>
 
           {/* Tabs */}
+
           <div className="flex gap-6 mb-6 text-sm font-medium cursor-pointer">
+
             <span
               onClick={() => setTeam("design")}
               className={`${
@@ -99,6 +109,7 @@ const Ouravengers = () => {
             >
               DEVELOPMENT TEAM
             </span>
+
           </div>
 
           <p className="text-gray-600 mb-6 max-w-md">
@@ -107,35 +118,41 @@ const Ouravengers = () => {
           </p>
 
           {/* Button */}
+
           <button className="flex items-center gap-3 bg-black text-white px-5 py-3 rounded-full hover:opacity-90 transition">
             <span className="text-lg">+</span>
             JOIN WITH US
           </button>
 
-          {/* ✅ SCROLL IMAGE (FIXED) */}
-          <div className="mt-10 w-full">
+          {/* ---------- SCROLL IMAGE ---------- */}
+
+          <div className="mt-10 w-full ">
+
             <div
-              className="transition-transform duration-200 ease-out"
-              style={{
-                transform: `translateX(${moveX}px)`,
-              }}
+              className="transition-transform duration-300 ease-out w-125 "
+              
             >
               <img
                 src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200"
                 alt="team"
-                className="w-full h-[260px] object-cover rounded-2xl shadow-md"
+                className="w-130 h-64 object-cover rounded-2xl shadow-md"
               />
             </div>
+
           </div>
+
         </div>
 
         {/* RIGHT SIDE */}
+
         <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-6">
+
           {currentTeam.map((member, index) => (
             <div
               key={index}
               className="bg-white rounded-2xl p-4 shadow-sm hover:shadow-md transition"
             >
+
               <img
                 src={member.img}
                 alt={member.name}
@@ -143,21 +160,28 @@ const Ouravengers = () => {
               />
 
               <h3 className="font-semibold text-lg">{member.name}</h3>
+
               <p className="text-gray-500 text-sm mb-3">{member.role}</p>
 
               <div className="flex gap-2">
+
                 <span className="bg-gray-100 px-3 py-1 rounded text-sm">
                   f
                 </span>
+
                 <span className="bg-gray-100 px-3 py-1 rounded text-sm">
                   t
                 </span>
+
                 <span className="bg-gray-100 px-3 py-1 rounded text-sm">
                   in
                 </span>
+
               </div>
+
             </div>
           ))}
+
         </div>
 
       </div>

@@ -58,7 +58,7 @@ const Ouravengers = () => {
   }, []);
 
   return (
-    <section className="bg-white max-w-[1400px] mx-auto rounded-2xl py-14 lg:py-20 px-4 sm:px-6 lg:px-16">
+    <section className="bg-white max-w-331 mx-auto rounded-2xl py-14 lg:py-20 px-4 sm:px-6 lg:px-16">
 
       <div className="flex flex-col lg:flex-row gap-10 lg:gap-12">
 
@@ -117,7 +117,7 @@ const Ouravengers = () => {
             <img
               src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200"
               alt="team"
-              className="w-full h-52 sm:h-64 md:h-72 lg:h-64 object-cover rounded-2xl shadow-md"
+              className="w-125 h-52 sm:h-64 md:h-72 lg:h-64 object-cover rounded-2xl shadow-md"
             />
 
           </div>

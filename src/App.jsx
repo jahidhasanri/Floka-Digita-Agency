@@ -7,6 +7,7 @@ import ContactSection from './components/ContactSection'
 import Expertise from './components/expertise'
 import FAQSection from './components/FAQSection'
 import FeedBack from './components/FeedBack'
+import Footer from './components/Footer'
 import FunFacts from './components/FunFacts'
 import Getreward from './components/Getrewards'
 import HappyUsers from './components/HappyUsers'
@@ -35,6 +36,7 @@ function App() {
       <Ouravengers></Ouravengers>
       <FAQSection></FAQSection>
       <BlogUpdates></BlogUpdates>
+      <Footer></Footer>
      
     </div>
   )

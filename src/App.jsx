@@ -23,8 +23,8 @@ function App() {
   return (
     <div className="bg-[#f5f5f5]">
      <Navabar></Navabar>
-     <Banner></Banner>
-     <OurApproch></OurApproch>
+      <Banner></Banner>
+     {/*<OurApproch></OurApproch>
      <TextSlider></TextSlider>
      <Protfolio></Protfolio>
      <Expertise></Expertise>
@@ -36,7 +36,7 @@ function App() {
       <Ouravengers></Ouravengers>
       <FAQSection></FAQSection>
       <BlogUpdates></BlogUpdates>
-      <Footer></Footer>
+      <Footer></Footer> */}
      
     </div>
   )

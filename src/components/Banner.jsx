@@ -17,10 +17,10 @@ const Banner = () => {
   };
 
   return (
-    <div className="relative h-screen pl-5 pr-5 mt-20 bg-white overflow-hidden">
+    <div className="relative h-screen pl-1 pr-1 lg:pl-5 lg:pr-5 mt-20 bg-white overflow-hidden">
       
       {/* Background Video with gap and rounded corners */}
-      <div className="absolute top-0 left-5 right-5 bottom-0  rounded-2xl overflow-hidden">
+      <div className="absolute top-0 lg:left-5 lg:right-5 bottom-0  rounded-2xl overflow-hidden">
         <video
           autoPlay
           loop
@@ -38,17 +38,17 @@ const Banner = () => {
       
       
       
-      <div className="relative z-10 flex items-center justify-between h-full px-20 mt-36">
+      <div className="relative z-10 md:flex items-center justify-between h-full lg:px-20 mt-36">
         {/* Left Text */}
         <div>
-          <h1 className="text-[240px] text-white font-normal">Floka</h1>
-          <p className="text-[100px] ml-64 -mt-24 text-gray-400">Studio</p>
+          <h1 className="text-[80px] xl:text-[240px] text-white font-normal">Floka</h1>
+          <p className="text-[40px] lg:text-[60px] xl:text-[100px] ml-28 xl:ml-64 -mt-5 xl:-mt-24 text-gray-400">Studio</p>
         </div>
 
         {/* Card */}
        <div>
 
-       <div className="bg-white rounded-2xl p-3 w-105 h-40 flex gap-6 mb-5">
+       <div className="bg-white rounded-2xl p-3 ml-0.5 w-full  lg:w-105 h-70 md:h-40 md:flex gap-6 mb-5">
           <div
             className="w-35 h-35 overflow-hidden rounded-xl"
             onMouseMove={handleMove}
@@ -80,8 +80,8 @@ const Banner = () => {
           </div>
         </div>
 
-      <p className="text-[20px] text-white font-semibold">No cookie-cutter websites. No fluff. </p>
-      <p className="text-[18px] font-semibold text-gray-300">Just real tools and smart strategies to grow your <br /> business and elevate your brand.</p>
+      <p className="text-[20px] text-white font-semibold ml-1">No cookie-cutter websites. No fluff. </p>
+      <p className="text-[18px] font-semibold text-gray-300 ml-1">Just real tools and smart strategies to grow your <br /> business and elevate your brand.</p>
 
        </div>
 

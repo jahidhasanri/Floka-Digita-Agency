@@ -78,8 +78,8 @@ const Expertise = () => {
 
       {/* heading */}
       <div className="text-center mb-20">
-        <h1 className="text-7xl font-semibold">Company</h1>
-        <h2 className="text-6xl text-gray-600 mt-2">expertise</h2>
+        <h1 className="text-3xl md:text-5xl lg:text-9xl font-semibold">Company</h1>
+        <h2 className=" text-3xl md:text-5xl lg:text-9xl text-gray-600 mt-2">expertise</h2>
       </div>
 
       {/* accordion */}
@@ -92,7 +92,7 @@ const Expertise = () => {
               className="flex items-center gap-6 cursor-pointer"
               onClick={() => setActive(index)}
             >
-              <div className="w-10 h-10 flex items-center justify-center border border-gray-600 rounded-full text-xl">
+              <div className="w-10 h-10 flex items-center justify-center border lg:mr-32  border-gray-600 rounded-full text-xl">
                 {active === index ? "-" : "+"}
               </div>
 
@@ -124,7 +124,7 @@ const Expertise = () => {
                   <img
                     src={item.img}
                     alt=""
-                    className="rounded-xl w-full h-62.5 object-cover"
+                    className="rounded-xl w-75 h-62.5 object-cover lg:ml-56"
                   />
                 </div>
               </div>

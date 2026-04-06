@@ -31,7 +31,7 @@ const OurApproch = () => {
       yearCount += 1;
       setYears(yearCount);
       if (yearCount >= 25) clearInterval(yearInterval);
-    }, 50);
+    }, 60);
 
     const userInterval = setInterval(() => {
       userCount += 40;
@@ -40,7 +40,7 @@ const OurApproch = () => {
         setUsers(1200);
         clearInterval(userInterval);
       }
-    }, 10);
+    }, 100);
 
     return () => {
       clearInterval(yearInterval);

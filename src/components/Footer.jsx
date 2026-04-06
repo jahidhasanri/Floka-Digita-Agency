@@ -1,75 +1,64 @@
-import {
-  ArrowRight,
-  
-  
-} from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white pt-32 pb-16 relative overflow-hidden">
+    <footer className="bg-black text-white pt-20 ml-4 md:ml-0 md:mx-5 rounded-2xl lg:pt-32 pb-12 lg:pb-16 relative overflow-hidden">
 
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-full mx-auto px-4 sm:px-6">
 
         {/* Top Big Text */}
-        <div className="text-center mb-24 relative">
+        <div className="text-center mb-14 md:mb-16 lg:mb-24 relative">
 
-          <h2 className="text-[80px] md:text-[140px] font-semibold leading-none text-white/20">
+          <h2 className="text-5xl sm:text-6xl md:text-[90px] lg:text-[140px] font-semibold leading-none text-white/20">
             Let's
           </h2>
 
-          <h2 className="text-[80px] md:text-[140px] font-semibold leading-none text-white/10">
+          <h2 className="text-5xl sm:text-6xl md:text-[90px] lg:text-[140px] font-semibold leading-none text-white/10">
             talk now
           </h2>
 
           {/* Circle Button */}
-          <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
-
-            <div className="relative w-28 h-28 rounded-full border border-white/20 flex items-center justify-center animate-spin">
-
-              <span className="absolute text-xs tracking-widest">
-                GET IN TOUCH
-              </span>
-
-              <ArrowRight className="absolute" />
-
-            </div>
-
+          <div className="w-20 sm:w-24 lg:w-28 -mt-8 sm:-mt-10 mx-auto">
+            <img src="/images/rss.png" alt="" className="w-full" />
           </div>
 
         </div>
 
-
         {/* Footer Grid */}
-        <div className="grid lg:grid-cols-3 gap-16 items-start">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-16 items-start">
 
           {/* Left Image */}
           <div>
-            <div className="rounded-2xl overflow-hidden">
+            <div className="rounded-2xl overflow-hidden space-y-4">
 
               <img
-                src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c"
-                className="w-full h-full object-cover"
+                src="/images/Screenshot_3.png"
+                className="w-full h-56 sm:h-64 md:h-72 lg:h-80 object-cover"
                 alt="footer"
+              />
+
+              <img
+                src="/images/s1.png"
+                alt=""
+                className="w-full"
               />
 
             </div>
           </div>
 
-
           {/* Middle Menu */}
-          <div className="space-y-6 text-2xl">
+          <div className="space-y-4 sm:space-y-6 text-xl sm:text-2xl lg:text-3xl sm:ml-10 lg:ml-16">
 
-            <p className="hover:text-gray-400 cursor-pointer">About Us</p>
-            <p className="hover:text-gray-400 cursor-pointer">Journal</p>
-            <p className="hover:text-gray-400 cursor-pointer">Faq</p>
-            <p className="hover:text-gray-400 cursor-pointer">Get In Touch</p>
-            <p className="hover:text-gray-400 cursor-pointer">Careers</p>
+            <p className="hover:text-gray-400 cursor-pointer font-semibold">About Us</p>
+            <p className="hover:text-gray-400 cursor-pointer font-semibold">Journal</p>
+            <p className="hover:text-gray-400 cursor-pointer font-semibold">Faq</p>
+            <p className="hover:text-gray-400 cursor-pointer font-semibold">Get In Touch</p>
+            <p className="hover:text-gray-400 cursor-pointer font-semibold">Careers</p>
 
           </div>
 
-
           {/* Right Content */}
-          <div className="space-y-6 text-gray-400">
+          <div className="space-y-5 text-gray-400 text-sm sm:text-base lg:max-w-md">
 
             <p>
               At Floka, we believe furniture should be more than just
@@ -82,28 +71,6 @@ export default function Footer() {
               <p>+123 (456 789 00)</p>
               <p>12/A, Booston Tower, NYC</p>
             </div>
-
-
-            {/* Social Icons */}
-            {/* <div className="flex gap-4 pt-4">
-
-              <div className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-black transition">
-                <FacebookIcon size={16} />
-              </div>
-
-              <div className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-black transition">
-                <TwitterIcon size={16} />
-              </div>
-
-              <div className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-black transition">
-                <LinkedinIcon size={16} />
-              </div>
-
-              {/* <div className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-black transition">
-                <DribbbleIcon size={16} />
-              </div> */}
-
-            {/* </div>  */}
 
           </div>
 

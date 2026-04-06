@@ -26,7 +26,7 @@ function App() {
       <Banner></Banner>
      <OurApproch></OurApproch>
     <TextSlider></TextSlider>
-      {/*<Protfolio></Protfolio>
+      <Protfolio></Protfolio>
      <Expertise></Expertise>
      <FunFacts></FunFacts>
      <HappyUsers></HappyUsers>
@@ -35,8 +35,8 @@ function App() {
      <Getreward></Getreward>
       <Ouravengers></Ouravengers>
       <FAQSection></FAQSection>
-      <BlogUpdates></BlogUpdates>
-      <Footer></Footer> */}
+     <BlogUpdates></BlogUpdates>
+       <Footer></Footer>
      
     </div>
   )

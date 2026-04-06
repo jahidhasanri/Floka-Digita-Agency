@@ -40,6 +40,7 @@ const sliderItems = [
 ];
 
 export default function FAQSection() {
+
   const [active, setActive] = useState(null);
   const [scrollX, setScrollX] = useState(0);
   const imgRef = useRef(null);
@@ -57,7 +58,8 @@ export default function FAQSection() {
     });
   }, []);
 
-  /* Slider scroll animation */
+  /* Slider scroll */
+
   useEffect(() => {
     const interval = setInterval(() => {
       setScrollX((prev) => prev + 1);
@@ -67,95 +69,134 @@ export default function FAQSection() {
   }, []);
 
   return (
-    <section className="py-20">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-16 lg:py-20">
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
         {/* Title */}
-        <h2 className="text-4xl font-bold mb-4">faq & get answer</h2>
-        <hr className="mb-16" />
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          faq & get answer
+        </h2>
+
+        <hr className="mb-12 lg:mb-16 text-gray-400" />
+
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-12">
 
           {/* LEFT */}
-          <div>
-            <h3 className="text-[18px] font-medium mb-6">
-              Don’t found anything yet. Feel free <br /> to ask anything. Let’s Talk
+
+          <div className="xl:mt-29.5">
+
+            <h3 className="text-base md:text-lg font-medium mb-6">
+              Don’t found anything yet. Feel free <br />
+              to ask anything. Let’s Talk
             </h3>
 
-            <div className="sticky top-24 w-80 h-80 rounded-2xl overflow-hidden">
+            <div className="sticky top-24 w-full max-w-[320px] h-75 md:h-80 rounded-2xl overflow-hidden">
               <div ref={imgRef} className="w-full h-full" />
             </div>
+
           </div>
 
+
           {/* RIGHT */}
+
           <div>
-            <h3 className="text-2xl font-semibold mb-6">
+
+            <h3 className="text-xl md:text-2xl font-semibold mb-6">
               Frequently Asked Questions
             </h3>
 
             <div className="space-y-4">
+
               {faqData.map((item, index) => (
+
                 <div
                   key={index}
-                  className="bg-white rounded-xl p-5 cursor-pointer shadow-sm"
+                  className="bg-white rounded-xl p-4 md:p-5 cursor-pointer shadow-sm"
                   onClick={() =>
                     setActive(active === index ? null : index)
                   }
                 >
+
                   <div className="flex justify-between items-center">
-                    <h4 className="font-semibold">{item.title}</h4>
+
+                    <h4 className="font-semibold text-sm md:text-base">
+                      {item.title}
+                    </h4>
 
                     {active === index ? (
-                      <div className="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center transition-transform hover:rotate-180">
+                      <div className="w-9 h-9 md:w-10 md:h-10 rounded-full bg-black text-white flex items-center justify-center transition-transform hover:rotate-180">
                         <Minus size={18} />
                       </div>
                     ) : (
-                      <div className="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center">
+                      <div className="w-9 h-9 md:w-10 md:h-10 rounded-full bg-black text-white flex items-center justify-center">
                         <Plus size={18} />
                       </div>
                     )}
+
                   </div>
 
-                  {/* FIXED CONTENT */}
                   {active === index && (
-                    <div className="mt-4 flex gap-4 items-start">
+
+                    <div className="mt-4 flex flex-col sm:flex-row gap-4 items-start">
+
                       <img
                         src={item.img}
-                        className="w-28 h-20 object-cover rounded-lg"
+                        className="w-full sm:w-28 h-40 sm:h-20 object-cover rounded-lg"
                         alt=""
                       />
+
                       <p className="text-gray-600 text-sm leading-relaxed">
                         {item.desc}
                       </p>
+
                     </div>
+
                   )}
+
                 </div>
+
               ))}
+
             </div>
+
           </div>
+
         </div>
 
+
         {/* SLIDER */}
-        <div className="mt-20 overflow-hidden border-t pt-10">
+
+        <div className="mt-16 lg:mt-20 overflow-hidden border-t pt-8 lg:pt-10">
+
           <div
-            className="flex gap-10 whitespace-nowrap"
+            className="flex gap-8 lg:gap-10 whitespace-nowrap"
             style={{
               transform: `translateX(-${scrollX}px)`,
             }}
           >
+
             {[...sliderItems, ...sliderItems].map((item, index) => (
+
               <div
                 key={index}
-                className="text-2xl font-semibold text-gray-700 flex items-center gap-4"
+                className="text-lg md:text-xl lg:text-2xl font-semibold text-gray-700 flex items-center gap-4"
               >
+
                 <span>{item}</span>
                 <span className="text-gray-400">||</span>
+
               </div>
+
             ))}
+
           </div>
+
         </div>
 
       </div>
+
     </section>
   );
 }

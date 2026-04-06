@@ -24,9 +24,9 @@ function App() {
     <div className="bg-[#f5f5f5]">
      <Navabar></Navabar>
       <Banner></Banner>
-     {/*<OurApproch></OurApproch>
-     <TextSlider></TextSlider>
-     <Protfolio></Protfolio>
+     <OurApproch></OurApproch>
+    <TextSlider></TextSlider>
+      {/*<Protfolio></Protfolio>
      <Expertise></Expertise>
      <FunFacts></FunFacts>
      <HappyUsers></HappyUsers>

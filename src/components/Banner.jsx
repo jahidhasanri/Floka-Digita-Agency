@@ -80,8 +80,8 @@ const Banner = () => {
           </div>
         </div>
 
-      <p className="text-[20px] text-white font-semibold ml-1">No cookie-cutter websites. No fluff. </p>
-      <p className="text-[18px] font-semibold text-gray-300 ml-1">Just real tools and smart strategies to grow your <br /> business and elevate your brand.</p>
+      <p className=" text-[15px] md:text-[20px] text-white font-semibold ml-1">No cookie-cutter websites. No fluff. </p>
+      <p className="text-[15px]md:text-[18px] font-semibold text-gray-300 ml-1">Just real tools and smart strategies to grow your <br /> business and elevate your brand.</p>
 
        </div>
 
